@@ -1,0 +1,5 @@
+interface:
+  display_name: "Codex Quota Aware"
+  short_description: "Tell the agent to be aware of Codex quota limits while it works."
+policy:
+  allow_implicit_invocation: false
