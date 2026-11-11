@@ -28,7 +28,7 @@ disable-model-invocation: true
 
 ## 3. 输出报告
 
-按用户指定位置保存 Markdown；未指定时使用 `docs/agent-docs-map.md`。已有报告原地更新，保留用户注释。报告包含：
+按用户指定位置保存 Markdown；未指定时遵循项目文档分类中的 agent 报告目录，没有约定时使用 `docs/findings/by-agents/agent-docs-map.md`。已有报告原地更新，保留用户注释。报告包含：
 
 - **范围**：项目、分析入口、未覆盖部分，以及报告是本次扫描快照。
 - **Mermaid 总览**：标注加载条件，区分目录作用范围与文档读取关系；稳定节点 ID，路径作标签。复杂结构拆为总览与局部图，标明仓库外和未验证节点。
