@@ -13,9 +13,11 @@ description: 为当前仓库的 Matt Pocock 工作流应用个人偏好补丁。
 
 查找并阅读已安装的 `setup-matt-pocock-skills/SKILL.md`，依据其说明和仓库现状判断是否需要完成或补齐 setup。需要时说明缺项，引导用户显式调用该技能，完成后继续。无法定位技能时，请用户提供位置或附加内容；确认未安装后再引导安装。
 
-## 2. 提议文档组织
+## 2. 确定文档结构
 
-阅读 [文档组织 setup](references/document-organization-setup.md)，结合项目现状提出目录分类、文档迁移与入口链接方案。用户审阅同意后落盘；后续补丁路径采用获准的映射。用户暂缓或拒绝时沿用现有结构，继续无冲突补丁。
+以 [文档维护模板中的分类](assets/document-maintenance.md#文档组织) 为推荐布局，展示目录树、下节列出的补丁文件落点，以及 README 和 `AGENTS.md` 指向文档维护说明的入口链接。用户一次确认或调整后，进入第三步安装。已有明确选择时直接沿用，重复执行不重新询问。
+
+已有项目若需要调整路径或移动文件，将受影响的文件、引用和配置列入同一方案；无需默认整理全仓文档。后续仅对方案未覆盖的冲突或调整询问用户。用户暂缓目录调整时，后续安装沿用现有结构。
 
 ## 3. 合并补丁
 
@@ -23,11 +25,11 @@ description: 为当前仓库的 Matt Pocock 工作流应用个人偏好补丁。
 
 - [agent-instructions.md](assets/agent-instructions.md)：合并到根目录 `AGENTS.md`。
 - [issue-tracker-github.md](assets/issue-tracker-github.md)：使用 GitHub tracker 时，合并到 `docs/agent/issue-tracker.md`。
-- [document-maintenance.md](assets/document-maintenance.md)：合并到 `docs/maintenance/document-maintenance.md`。
+- [document-maintenance.md](assets/document-maintenance.md)：合并到 `docs/maintenance/document-maintenance.md`，按第二步确定的实际目录及用途填写“文档组织”一节。
 
-上述目标地址为默认推荐目标地址。若用户在第二步中确定了其他的文件夹组织形式，需要选择对应文件夹放入。如果不确定，与用户确认。
+使用第二步确定的路径，按内容需要创建目录，按安装后的文件位置更新入口及资源内链接；涉及文件移动时同步修正引用和配置。新文件复制资源，已有文件原地合并，保留项目配置与用户定制；等价内容跳过。行为冲突时展示差异和建议，请用户决定，继续处理无冲突部分。
 
-按获准的项目目录方案调整目标及资源内链接。新文件复制资源，已有文件原地合并，保留项目配置与用户定制；等价内容跳过。行为冲突时展示差异和建议，请用户决定，继续处理无冲突部分。
+按确定的方案，在 README 添加人类导航入口，在 `AGENTS.md` 添加新增或维护文档前读取的入口，两处均链接到文档维护说明。
 
 原版配置文件按中文写作偏好维护，保留命令、标识符和语义。
 
@@ -52,8 +54,8 @@ description: 为当前仓库的 Matt Pocock 工作流应用个人偏好补丁。
 
 ## 6. 配置文档维护
 
-阅读 [文档检查 setup](references/document-check-setup.md)，检查项目现有工具后，让用户选择复用或安装现成工具、项目内实现、跳过检查。按选择完成配置、验收和维护说明；已有明确选择沿用，重复 patch 时保留定制。
+阅读 [文档检查 setup](references/document-check-setup.md)，检查项目现有工具后，让用户选择复用或安装现成工具、项目内实现、暂不配置。按选择完成配置、验收和维护说明；已有明确选择沿用，重复 patch 时保留定制。
 
 ## 7. 验证与交付
 
-检查改动差异、文档入口与链接、`CLAUDE.md` 软链接和 Git 本地排除规则。采用文档分类时，核对 README 和 `AGENTS.md` 均链接到文档维护说明，已批准的迁移及入链更新完整。配置检查器时，运行最终检查入口。汇报已应用补丁、文档组织与检查选择及验证结果、缺少的技能和未解决事项。
+检查改动差异、文档入口与链接、`CLAUDE.md` 软链接和 Git 本地排除规则。核对补丁落点与确定的目录方案一致，方案中的文档入口可达；涉及文件移动时核对引用同步更新。配置检查器时，运行最终检查入口。汇报已应用补丁、文档组织与检查选择及验证结果、缺少的技能和未解决事项。
