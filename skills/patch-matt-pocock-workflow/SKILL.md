@@ -11,7 +11,7 @@ description: 为当前仓库的 Matt Pocock 工作流应用个人偏好补丁，
 
 确定目标仓库或 worktree 根目录。读取适用的 agent 指令，检查根目录 `AGENTS.md`、`CLAUDE.md`（包括软链接目标）、`docs/agents/` 和 Git 本地排除配置。
 
-检查原版 setup 的输出是否存在：agent 文件中的技能配置入口、issue tracker 和 domain 配置；triage labels 仅在配置了 triage 时需要。已有配置缺项时指出具体缺项，不要求重做完整 setup。未完成 setup 时，引导用户显式调用 `setup-matt-pocock-skills`，完成后继续；该技能未安装时先引导安装，不代替用户选择 tracker 或领域布局。
+阅读已安装的 `setup-matt-pocock-skills`，依据其说明和当前仓库的实际配置，判断是否需要先完成或补齐 setup。需要时说明缺项，引导用户显式调用该技能，完成后继续；保留已有配置与选择。若该技能未安装，先引导用户安装。
 
 本技能不升级上游技能或刷新原版模板。保留目标仓库的 tracker、标签、领域布局以及新版模板中的 sub-issue、Wayfinding 等内容；源项目缺少某段内容不构成删除理由。
 
