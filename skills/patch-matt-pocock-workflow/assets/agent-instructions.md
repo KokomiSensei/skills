@@ -22,7 +22,7 @@ GLOSSARY 术语标题采用 `**中文 | English**`，描述和 Avoid 使用中�
 
 ### 共享依赖
 
-需要下载或使用可复用的浏览器、SDK、工具链或模型前，先阅读 `docs/agents/patch/shared-dependencies.md`。
+需要下载或使用可跨项目或在项目内复用的软件、SDK、工具链或模型等具有明显存储和下载开销的产物前，先阅读 `docs/agents/patch/shared-dependencies.md`。
 
 ### 提交与交付
 
