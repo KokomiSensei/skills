@@ -1,0 +1,6 @@
+interface:
+  display_name: "Visualize Agent Docs"
+  short_description: "Visualize how project documents guide agent behavior."
+
+policy:
+  allow_implicit_invocation: false

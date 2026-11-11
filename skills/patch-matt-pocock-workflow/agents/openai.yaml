@@ -1,2 +1,6 @@
+interface:
+  display_name: "Patch Matt Pocock Workflow"
+  short_description: "Apply personal preferences to the Matt Pocock workflow."
+
 policy:
   allow_implicit_invocation: false

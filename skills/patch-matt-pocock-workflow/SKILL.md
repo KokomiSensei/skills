@@ -27,6 +27,7 @@ description: 为当前仓库的 Matt Pocock 工作流应用个人偏好补丁。
 | [shared-dependencies.md](assets/shared-dependencies.md) | `docs/agents/patch/shared-dependencies.md` |
 | [delivery.md](assets/delivery.md) | `docs/agents/patch/delivery.md` |
 | [retro-workflow.md](assets/retro-workflow.md) | `docs/agents/patch/retro-workflow.md` |
+| [document-maintenance.md](assets/document-maintenance.md) | `docs/agents/patch/document-maintenance.md`，按第 5 步的选择填写检查入口 |
 
 原版配置文件按中文写作偏好维护，保留命令、标识符和语义。
 
@@ -49,6 +50,10 @@ description: 为当前仓库的 Matt Pocock 工作流应用个人偏好补丁。
 
 对找到的每份文件，展示路径、简短内容摘要，以及是否建议引用和原因，区分个人全局规则与父项目约定。询问用户是否引用；获同意后，在当前项目的 `AGENTS.md` 中添加 Markdown 链接并说明适用范围，优先使用相对路径。
 
-## 5. 验证与交付
+## 5. 配置文档维护
 
-检查改动差异、文档入口与链接、`CLAUDE.md` 软链接和 Git 本地排除规则。汇报已应用补丁、缺少的技能及未解决的事项。
+阅读 [文档检查 setup](references/document-check-setup.md)，检查项目现有工具后，让用户选择复用或安装现成工具、项目内实现、跳过检查。按选择完成配置、验收和维护说明；已有明确选择沿用，重复 patch 时保留定制。
+
+## 6. 验证与交付
+
+检查改动差异、文档入口与链接、`CLAUDE.md` 软链接和 Git 本地排除规则。配置检查器时，运行最终检查入口。汇报已应用补丁、文档检查选择及验证结果、缺少的技能和未解决事项。
