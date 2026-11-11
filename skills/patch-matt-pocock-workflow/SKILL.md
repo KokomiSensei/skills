@@ -19,19 +19,15 @@ description: 为当前仓库的 Matt Pocock 工作流应用个人偏好补丁。
 
 ## 3. 合并补丁
 
-阅读以下资源并应用到对应位置。表中路径是原有布局，按第 2 步获准的映射调整目标及资源内链接；例如采用推荐布局时，将 `docs/agents/` 映射到 `docs/agent/`，将文档维护说明放入 `docs/maintenance/`。新文件复制资源，已有文件原地合并，保留项目配置与用户定制；等价内容跳过。行为冲突时展示差异和建议，请用户决定，继续处理无冲突部分。
+阅读 [assets](assets/) 中的补丁文档，默认按原文件名合并到 `docs/agent/patch/`，以下文件单独处理：
 
-| 资源 | 目标 |
-| --- | --- |
-| [agent-instructions.md](assets/agent-instructions.md) | 根目录 `AGENTS.md` 中的偏好与导航入口 |
-| [issue-tracker-github.md](assets/issue-tracker-github.md) | 使用 GitHub tracker 时，合并到 `docs/agents/issue-tracker.md` |
-| [workflow.md](assets/workflow.md) | `docs/agents/patch/workflow.md` |
-| [ui-workflow.md](assets/ui-workflow.md) | `docs/agents/patch/ui-workflow.md` |
-| [writing-tests.md](assets/writing-tests.md) | `docs/agents/patch/writing-tests.md` |
-| [shared-dependencies.md](assets/shared-dependencies.md) | `docs/agents/patch/shared-dependencies.md` |
-| [delivery.md](assets/delivery.md) | `docs/agents/patch/delivery.md` |
-| [retro-workflow.md](assets/retro-workflow.md) | `docs/agents/patch/retro-workflow.md` |
-| [document-maintenance.md](assets/document-maintenance.md) | 原布局为 `docs/agents/patch/document-maintenance.md`；采用推荐分类时为 `docs/maintenance/document-maintenance.md`，按第 6 步填写检查入口 |
+- [agent-instructions.md](assets/agent-instructions.md)：合并到根目录 `AGENTS.md`。
+- [issue-tracker-github.md](assets/issue-tracker-github.md)：使用 GitHub tracker 时，合并到 `docs/agent/issue-tracker.md`。
+- [document-maintenance.md](assets/document-maintenance.md)：合并到 `docs/maintenance/document-maintenance.md`。
+
+上述目标地址为默认推荐目标地址。若用户在第二步中确定了其他的文件夹组织形式，需要选择对应文件夹放入。如果不确定，与用户确认。
+
+按获准的项目目录方案调整目标及资源内链接。新文件复制资源，已有文件原地合并，保留项目配置与用户定制；等价内容跳过。行为冲突时展示差异和建议，请用户决定，继续处理无冲突部分。
 
 原版配置文件按中文写作偏好维护，保留命令、标识符和语义。
 
@@ -60,4 +56,4 @@ description: 为当前仓库的 Matt Pocock 工作流应用个人偏好补丁。
 
 ## 7. 验证与交付
 
-检查改动差异、文档入口与链接、`CLAUDE.md` 软链接和 Git 本地排除规则。采用文档分类时，核对 README 和 `AGENTS.md` 均链接到同一份分类说明，已批准的迁移及入链更新完整。配置检查器时，运行最终检查入口。汇报已应用补丁、文档组织与检查选择及验证结果、缺少的技能和未解决事项。
+检查改动差异、文档入口与链接、`CLAUDE.md` 软链接和 Git 本地排除规则。采用文档分类时，核对 README 和 `AGENTS.md` 均链接到文档维护说明，已批准的迁移及入链更新完整。配置检查器时，运行最终检查入口。汇报已应用补丁、文档组织与检查选择及验证结果、缺少的技能和未解决事项。
