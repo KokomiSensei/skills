@@ -22,14 +22,14 @@ description: 为当前仓库的 Matt Pocock 工作流应用个人偏好补丁，
 | 资源 | 目标 |
 | --- | --- |
 | [agent-instructions.md](assets/agent-instructions.md) | 根目录 `AGENTS.md` 中的偏好与导航入口 |
-| [workflow.md](assets/workflow.md) | `docs/agents/workflow.md` |
-| [ui-workflow.md](assets/ui-workflow.md) | `docs/agents/ui-workflow.md` |
-| [writing-tests.md](assets/writing-tests.md) | `docs/agents/writing-tests.md` |
-| [shared-dependencies.md](assets/shared-dependencies.md) | `docs/agents/shared-dependencies.md` |
-| [delivery.md](assets/delivery.md) | `docs/agents/delivery.md` |
-| [retro-workflow.md](assets/retro-workflow.md) | `docs/agents/retro-workflow.md` |
+| [workflow.md](assets/workflow.md) | `docs/agents/patch/workflow.md` |
+| [ui-workflow.md](assets/ui-workflow.md) | `docs/agents/patch/ui-workflow.md` |
+| [writing-tests.md](assets/writing-tests.md) | `docs/agents/patch/writing-tests.md` |
+| [shared-dependencies.md](assets/shared-dependencies.md) | `docs/agents/patch/shared-dependencies.md` |
+| [delivery.md](assets/delivery.md) | `docs/agents/patch/delivery.md` |
+| [retro-workflow.md](assets/retro-workflow.md) | `docs/agents/patch/retro-workflow.md` |
 
-已有章节原地更新，保留项目配置和用户定制，避免重复入口。若规则发生行为冲突，展示双方规则和建议，询问后再处理该部分；继续完成无冲突部分。保留既有开发规范入口，不复制源项目的 `docs/dev-spec.md`。
+已有章节原地更新，保留项目配置和用户定制，避免重复入口。若规则发生行为冲突，展示双方规则和建议，询问后再处理该部分；继续完成无冲突部分。保留既有开发规范入口。
 
 原版配置文件按中文写作偏好维护，保留命令、标识符和语义；GitHub tracker 的多行正文与评论采用临时文件加 `--body-file`，不整体替换 tracker 文件。
 
