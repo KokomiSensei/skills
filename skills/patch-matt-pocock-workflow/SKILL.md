@@ -20,6 +20,7 @@ description: 为当前仓库的 Matt Pocock 工作流应用个人偏好补丁。
 | 资源 | 目标 |
 | --- | --- |
 | [agent-instructions.md](assets/agent-instructions.md) | 根目录 `AGENTS.md` 中的偏好与导航入口 |
+| [issue-tracker-github.md](assets/issue-tracker-github.md) | 使用 GitHub tracker 时，合并到 `docs/agents/issue-tracker.md` |
 | [workflow.md](assets/workflow.md) | `docs/agents/patch/workflow.md` |
 | [ui-workflow.md](assets/ui-workflow.md) | `docs/agents/patch/ui-workflow.md` |
 | [writing-tests.md](assets/writing-tests.md) | `docs/agents/patch/writing-tests.md` |
@@ -27,7 +28,7 @@ description: 为当前仓库的 Matt Pocock 工作流应用个人偏好补丁。
 | [delivery.md](assets/delivery.md) | `docs/agents/patch/delivery.md` |
 | [retro-workflow.md](assets/retro-workflow.md) | `docs/agents/patch/retro-workflow.md` |
 
-原版配置文件按中文写作偏好维护，保留命令、标识符和语义；GitHub tracker 的多行正文与评论采用临时文件加 `--body-file`。
+原版配置文件按中文写作偏好维护，保留命令、标识符和语义。
 
 检查补丁依赖的技能，缺少时照常安装文档并报告，实际需要时再引导用户安装。
 
